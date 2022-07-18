@@ -7,8 +7,13 @@ import Header from '../Header'
 const Layout = ({ children }: LayoutProps) => {
     return (
         <div>
-            <Header />
-            {children}
+
+            <header className="sticky top-0 ..."><Header /></header>
+
+
+            <main className="p-4">
+                <p className="mb-6">{children}</p>
+            </main>
         </div>)
 }
 

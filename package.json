@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "server": "json-server ./db.json --port 3001",
     "dev": "next dev -p 8080 ",
     "build": "next build",
     "start": "next start",
@@ -10,6 +11,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.7",
+    "axios": "^0.27.2",
     "next": "12.1.6",
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.0",
